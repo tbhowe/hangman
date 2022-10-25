@@ -1,5 +1,5 @@
 
-while (True):
+while True:
     # Request input from user of a single letter
     guess=input("please enter a single letter")
 
