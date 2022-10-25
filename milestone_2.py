@@ -20,7 +20,7 @@ while len(guess) != 1:
 print('thanks!')
 
 # Checkl that the guess is an alphabetical
-if string.isalpha==1:
+if guess.isalpha==1:
     print("good guess!")
 else:
     print("Oops! That is not a valid input.")
