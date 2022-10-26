@@ -12,3 +12,9 @@ A pre-determined list of possible words is supplied, and the random.choice() met
 The user is then asked to provide a single letter as input, using the Python input() function. This input is assigned to the variable "guess". This occurs in a while loop, such that while the input length is not equal to one, the user is reminded of the input constraints, and re-prompted for a new input.
 
 Once a single-character input is stored in the variable "guess", the .isalpha() method is used in an if statement, to determine whether the single-character guess is alphabetical. If isalpha(guess) returns true, then the user is thanked for their input, otherwise the user is told the guess is invalid. 
+
+Milestone 4
+
+This iteration of the Hangman code defines Hangman as an object class, with various attributes representing the current game state (eg. number of lives remaining, list of previous guesses), and the functions developed in milestone 3 are reproduced as methods inside the class. The game can be started by instantiating a Hangman object, passing it a list of possible words, from which it will choose a random word as the focus of the game. 
+
+prerequisites: RANDOM package.
