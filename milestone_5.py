@@ -49,7 +49,8 @@ class Hangman:
                 
 
 # Create word list
-word_list = ["lingon", "raspberry", "cherry","rambutan","guava"]
+# word_list = ["lingon", "raspberry", "cherry","rambutan","guava"]
+word_list = ["banana"]
 
 # Define play_game function
 
@@ -62,7 +63,7 @@ def play_game(word_list):
         elif game.num_letters > 0:
             game.ask_for_input()
         else:
-            print("Congratulation. You won the game!")
+            print("You won!")
             return()
 
 play_game(word_list)
