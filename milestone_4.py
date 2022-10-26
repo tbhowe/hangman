@@ -31,11 +31,14 @@ class Hangman:
         #checks that input is alphabetical AND of length 1. Escapes if both conditions met
             if len(guess)!=1 or guess.isalpha() != 1:
                 print("Invalid letter. Please, enter a single alphabetical character.")
+                break
             elif guess in self.list_of_guesses:
                 print("You already tried that letter!")
+                break
             else:
                 self.check_guess(guess)
                 self.list_of_guesses+=guess
+                break
                 
 
 # Create word list
