@@ -17,7 +17,7 @@ class Hangman:
         guess= guess.lower()
         if guess in self.word:
             print("Good guess! " + guess + " is in the word.")
-            for iLetter in self.word:
+            for iLetter in range(len(self.word)):
                 if self.word[iLetter]==guess:
                     self.word_guessed[iLetter]=guess
             self.num_letters-=1   
