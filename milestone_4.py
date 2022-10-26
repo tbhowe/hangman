@@ -24,7 +24,7 @@ class Hangman:
             return()
         else:
             self.num_lives-=1
-            print("Sorry, " + guess + " is not in the word. Try again.")
+            print("Sorry, " + guess + " is not in the word.")
             print("You have " + str(self.num_lives) + " lives left.")
         #self.list_of_guesses+=guess
         return()
