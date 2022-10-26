@@ -25,6 +25,7 @@ class Hangman:
         else:
             self.num_lives-=1
             print("Sorry, " + guess + " is not in the word. Try again.","You have {num_lives} lives left.")
+        self.list_of_guesses+=guess
         return()
 
     def ask_for_input(self):
@@ -42,7 +43,7 @@ class Hangman:
                 
             else:
                 self.check_guess(guess)
-                self.list_of_guesses+=guess
+                #self.list_of_guesses+=guess  # This is a duplicate of functionality in check_guess method now
                 break
                 
 
