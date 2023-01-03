@@ -13,7 +13,7 @@ The user is then asked to provide a single letter as input, using the Python inp
 
 Once a single-character input is stored in the variable "guess", the .isalpha() method is used in an if statement, to determine whether the single-character guess is alphabetical. If isalpha(guess) returns true, then the user is thanked for their input, otherwise the user is told the guess is invalid. 
 
-##Milestone 3:
+## Milestone 3:
 
 Two functions are defined:
 
@@ -21,10 +21,10 @@ ask_for_input()  - this recapitulates the input request code from milestone two.
 
 check_guess()  - This function checks the validity of the guess, and feeds back to the user.
 
-##Milestone 4:
+## Milestone 4:
 
 This iteration of the Hangman code defines Hangman as an object class, with various attributes representing the current game state (eg. number of lives remaining, list of previous guesses), and the functions developed in milestone 3 are reproduced as methods inside the class. The game can be started by instantiating a Hangman object, passing it a list of possible words, from which it will choose a random word as the focus of the game. 
 
-##Milestone 5:
+## Milestone 5:
 
 In this, the final iteration of the project, the complete game is created. The script defines a function play_game, which instantiates an object of the class Hangman, and then orchestrates the logic of the game inside an iterative loop. The loop is escaped by either winning the game (number of letters remaining reaches zero, or by losing (number of lives reaches zero). If neither of these conditions are met, the loop continues, iteratively calling the ask_for_input() function, and updating the core game variables as a result of that input.
